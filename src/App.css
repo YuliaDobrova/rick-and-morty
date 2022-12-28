@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif !important;
+  /* color: #ffffff; */
+  color: royalblue;
+  overflow: visible;
+  overflow-y: auto;
+  background: #050d0b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.App {
+  text-align: center;
+}
