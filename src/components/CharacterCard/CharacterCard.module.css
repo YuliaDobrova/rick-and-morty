@@ -1,15 +1,19 @@
 .card {
   text-align: center;
-  margin: 20px;
-  border: 1px solid royalblue;
-  border-radius: 10px;
+  margin: 10px;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.75));
+  border: 2px solid #fff;
+  box-shadow: 1px 1px 5px 2px #fff;
+  border-radius: 30px;
   cursor: pointer;
 }
 .card:hover {
   transform: scale(0.95);
+  border: 2px solid aquamarine;
+  box-shadow: 5px 5px 15px 5px aquamarine;
 }
 .card:hover .name {
-  color: #fff;
+  color: aquamarine;
   font-weight: bold;
 }
 
@@ -24,5 +28,5 @@
 .name {
   padding-top: 10px;
   padding-bottom: 10px;
-  color: royalblue;
+  color: #fff;
 }
