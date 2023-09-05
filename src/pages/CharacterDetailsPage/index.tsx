@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { useGetCharacterDetailsByIdQuery } from "../../store/api/characters";
+import styles from "./CharacterDetailsPage.module.css";
 
 const CharacterDetailsPage = () => {
   const { id } = useParams();
@@ -27,10 +28,10 @@ const CharacterDetailsPage = () => {
         src={data.image}
         alt={data.name}
       />
-      <div>Name: {data.name}</div>
-      <div>Gender:{data.gender}</div>
-      <div>Species: {data.species}</div>
-      <div>Location: {data.location.name}</div>
+      <div className={styles.name}>Name: {data.name}</div>
+      <div className={styles.text}>Gender: {data.gender}</div>
+      <div className={styles.text}>Species: {data.species}</div>
+      <div className={styles.text}>Location: {data.location.name}</div>
     </div>
   );
 };
